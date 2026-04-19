@@ -16,3 +16,7 @@ Route::get('/servizi', [ServiziController::class, 'servizi'])->name('services');
 
 
 Route::get('/servizi/detail/{id}', [ServiziController::class, 'serviziDetail'])->name('servicesDetail');
+
+//invio mail 
+
+Route::post('/contact-us', [PublicController::class,'contactUs'])->name('contactUs');
